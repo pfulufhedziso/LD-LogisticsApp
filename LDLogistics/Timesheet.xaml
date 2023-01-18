@@ -1,0 +1,65 @@
+﻿<Window x:Class="LDLogistics.Timesheet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LDLogistics"
+        mc:Ignorable="d"
+        Title="Timesheet" Height="450" Width="800">
+    <Grid Background="#FF5E9AA5" Margin="0,0,-598,0" Height="434" VerticalAlignment="Top">
+        <Label x:Name="label" Content="PLEASE ENTER TIMESHEET MANAGER ID:" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Arial Black"/>
+        <TextBox x:Name="TmID_txtbox" HorizontalAlignment="Left" Margin="373,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial Black"/>
+        <Label x:Name="label1" Content="PLEASE ENTER EMPOYEE ID:" HorizontalAlignment="Left" Margin="25,64,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDFBFB"/>
+        <TextBox x:Name="EmID_txtbox" HorizontalAlignment="Left" Margin="373,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="PLEASE ENTER EMPOYEE NAME:" HorizontalAlignment="Left" Margin="21,104,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDF9F9"/>
+        <TextBox x:Name="EmName_txtbox" HorizontalAlignment="Left" Margin="373,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label3" Content="PLEASE ENTER SURNAME:" HorizontalAlignment="Left" Margin="25,147,0,0" VerticalAlignment="Top" Foreground="#FFFFFCFC" FontFamily="Arial Black"/>
+        <TextBox x:Name="Surname_txtbox" HorizontalAlignment="Left" Margin="373,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label4" Content="PLEASE ENTER EMPLOYEE'S POSITION:" HorizontalAlignment="Left" Margin="25,193,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White"/>
+        <TextBox x:Name="EmPosition_txtbox" HorizontalAlignment="Left" Margin="373,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial Black"/>
+        <Label x:Name="label5" Content="PLEASE ENTER  HOURS WORKED:" HorizontalAlignment="Left" Margin="25,235,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFFFEFE"/>
+        <TextBox x:Name="Hours_txtbox" HorizontalAlignment="Left" Margin="373,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial Black"/>
+        <DataGrid x:Name="dataGrid" Margin="583,25,0,158" HorizontalAlignment="Left" Width="687"/>
+        <Button x:Name="Employee_btn" Content="VIEW EMPLOYEE DETAILS" HorizontalAlignment="Left" Margin="95,342,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Background="White" Height="50" Width="207" Click="Employee_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Timesheet_btn" Content="Daily timesheet report" HorizontalAlignment="Left" Margin="398,342,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Height="50" Width="207" Click="Timesheet_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="add_btn" Content="ADD MORE" HorizontalAlignment="Left" Margin="699,342,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Background="White" Height="50" Width="188" Click="add_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Back_btn" Content="BACK" HorizontalAlignment="Left" Margin="592,283,0,0" VerticalAlignment="Top" Click="Back_btn_Click_1" FontFamily="Arial Black" BorderBrush="#FFF9F8F8" Background="White" Height="33" Width="107">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Exit_btn" Content="EXIT" HorizontalAlignment="Left" Margin="736,284,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Background="White" RenderTransformOrigin="-0.2,0.665" Height="33" Width="119" Click="Exit_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Clear_btn" Content="CLEAR" HorizontalAlignment="Left" Margin="906,287,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Height="30" Width="72" Click="Clear_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Update_btn" Content="UPDATE" HorizontalAlignment="Left" Margin="996,287,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Height="33" Width="102" Click="Update_btn_Click" RenderTransformOrigin="-0.125,0.592">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Delete_btn" Content="DELETE" HorizontalAlignment="Left" Margin="1148,287,0,0" VerticalAlignment="Top" Background="#FFF6F6F6" FontFamily="Arial Black" Height="33" Click="Delete_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,59 @@
+﻿<Window x:Class="LDLogistics.Trip"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LDLogistics"
+        mc:Ignorable="d"
+        Title="Trip" Height="450" Width="800">
+    <Grid Background="#FF5E9AA5" Margin="0,0,-326,0">
+        <Label x:Name="label" Content="PLEASE ENTER TRIP MANAGER ID:" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Arial Black"/>
+        <TextBox x:Name="ID_txtbox" HorizontalAlignment="Left" Margin="460,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial Black"/>
+        <Label x:Name="label1" Content="PLEASE ENTER DESTINATION:" HorizontalAlignment="Left" Margin="25,64,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDFBFB"/>
+        <TextBox x:Name="Des_txtbox" HorizontalAlignment="Left" Margin="460,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="PLEASE ENTER KILOMETER TO BE TRAVELLED:" HorizontalAlignment="Left" Margin="21,150,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDF9F9"/>
+        <TextBox x:Name="Travelled_txtbox" HorizontalAlignment="Left" Margin="460,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dataGrid" Margin="624,25,0,0" HorizontalAlignment="Left" Width="492" Height="251" VerticalAlignment="Top"/>
+        <Button x:Name="DailyToBe_btn" Content="DAILY PLANNED TRIP REPORT" HorizontalAlignment="Left" Margin="31,314,0,0" VerticalAlignment="Top" Width="205" Height="42" FontFamily="Arial Black" Background="White" Click="DisplayAdd_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="DailyCompleted_btn" Content="DAILY COMPLETED REPORT" HorizontalAlignment="Left" Margin="317,314,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Background="#FFFCFCFC" Height="42" Width="203" Click="SpecficService_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label6_Copy" Content="PLEASE CLICK ONE OF THE BUTTONS TO DISPLAY REPORTS" HorizontalAlignment="Left" Margin="31,252,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFFF8F8"/>
+        <Label x:Name="label2_Copy" Content="PLEASE ENTER KILOMETER WHICH HAVE BEEN TRAVELLED:" HorizontalAlignment="Left" Margin="21,193,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDF9F9"/>
+        <TextBox x:Name="HaveTravelled_txtbox_" HorizontalAlignment="Left" Margin="460,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy" Content="PLEASE ENTER VEHICLE NUMBER:" HorizontalAlignment="Left" Margin="25,109,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDFBFB"/>
+        <TextBox x:Name="VehcileNumber_txtbox" HorizontalAlignment="Left" Margin="460,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Back_btn" Content="BACK" HorizontalAlignment="Left" Margin="641,371,0,0" VerticalAlignment="Top" Click="Back_btn_Click" FontFamily="Arial Black" Background="White" Width="131" Height="30">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Add_btn" Content="Add More" HorizontalAlignment="Left" Margin="814,371,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Width="112" Height="30" Click="Add_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Clear_btn" Content="CLEAR" HorizontalAlignment="Left" Margin="981,371,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Height="30" Width="87" Click="Clear_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Update_btn" Content="UPDATE" HorizontalAlignment="Left" Margin="792,281,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Height="33" Width="102" Click="Update_btn_Click" RenderTransformOrigin="-0.125,0.592">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Delete_btn" Content="DELETE" HorizontalAlignment="Left" Margin="944,281,0,0" VerticalAlignment="Top" Background="#FFF6F6F6" FontFamily="Arial Black" Height="33" Click="Delete_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>

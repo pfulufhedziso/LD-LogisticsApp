@@ -1,0 +1,75 @@
+﻿<Window x:Class="LDLogistics.Service"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LDLogistics"
+        mc:Ignorable="d"
+        Title="Service" Height="450" Width="800">
+    <Grid Background="#FF5E9AA5" Margin="0,0,-567,0" Height="434" VerticalAlignment="Top">
+        <Label x:Name="label" Content="PLEASE ENTER SERVICE MANAGER ID:" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontFamily="Arial Black"/>
+        <TextBox x:Name="ID_txtbox" HorizontalAlignment="Left" Margin="460,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial Black"/>
+        <Label x:Name="label1" Content="PLEASE ENTER VEHICLE NUMBER:" HorizontalAlignment="Left" Margin="25,64,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDFBFB"/>
+        <TextBox x:Name="VehicleNumber_txtbox" HorizontalAlignment="Left" Margin="460,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="PLEASE ENTER APPOINTMENT TIME:" HorizontalAlignment="Left" Margin="21,104,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDF9F9"/>
+        <TextBox x:Name="Time_txtbox" HorizontalAlignment="Left" Margin="460,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label3" Content="PLEASE ENTER  SERVICE TO BE PERFORMED:" HorizontalAlignment="Left" Margin="25,162,0,0" VerticalAlignment="Top" Foreground="#FFFFFCFC" FontFamily="Arial Black"/>
+        <TextBox x:Name="ServiceType_txtbox" HorizontalAlignment="Left" Margin="460,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label4" Content="PLEASE ENTER PROCEDURE CODE:" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Center" FontFamily="Arial Black" Foreground="White"/>
+        <TextBox x:Name="PCode_txtbox" HorizontalAlignment="Left" Margin="460,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontFamily="Arial Black"/>
+        <Label x:Name="label5" Content="PLEASE ENTER SERVICE DESCRIPTION(SUMMARISED PLEASE):" HorizontalAlignment="Left" Margin="25,252,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFFFEFE"/>
+        <TextBox x:Name="Description_txtbox" HorizontalAlignment="Left" Margin="460,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial Black"/>
+        <Label x:Name="label6" Content="PLEASE ENTER SERVICE COST:" HorizontalAlignment="Left" Margin="25,302,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFFF8F8"/>
+        <TextBox x:Name="Cost_txtbox" HorizontalAlignment="Left" Margin="460,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dataGrid" Margin="624,25,0,0" HorizontalAlignment="Left" Width="686" Height="251" VerticalAlignment="Top"/>
+        <Button x:Name="DailyAndWeekly_btn" Content="DAILY AND WEEKLY SERVICE" HorizontalAlignment="Left" Margin="25,372,0,0" VerticalAlignment="Top" Width="205" Height="42" FontFamily="Arial Black" Background="White" Click="DisplayAdd_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="ServiceRequirments_btn" Content="SERVICE REQUIRMENTS" HorizontalAlignment="Left" Margin="298,376,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Width="157" Height="42" Click="Back_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="YearlyServiceReport_btn" Content="YEARLY SERVICE REPORT" HorizontalAlignment="Left" Margin="649,376,0,0" VerticalAlignment="Top" Width="214" Height="42" FontFamily="Arial Black" Background="White" Click="Exit_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="SpecficService_btn" Content="SPECIFIC SERVICE REPORT" HorizontalAlignment="Left" Margin="945,376,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Background="#FFFCFCFC" Height="42" Width="203" Click="SpecficService_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label6_Copy" Content="PLEASE CLICK ONE OF THE BUTTONS TO DISPLAY REPORTS" HorizontalAlignment="Left" Margin="263,347,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFFF8F8"/>
+        <Label x:Name="label2_Copy" Content="PLEASE ENTER APPOINTMENT DATE:" HorizontalAlignment="Left" Margin="27,133,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FFFDF9F9"/>
+        <TextBox x:Name="Date_txtbox_" HorizontalAlignment="Left" Margin="460,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Back_btn" Content="BACK" HorizontalAlignment="Left" Margin="624,287,0,0" VerticalAlignment="Top" Click="Back_btn_Click_1" FontFamily="Arial Black" BorderBrush="#FFF9F8F8" Background="White" Height="33" Width="107" RenderTransformOrigin="0.093,0.692">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Add_btn" Content="Add More" HorizontalAlignment="Left" Margin="756,287,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Height="33" Width="96" Click="Add_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Clear_btn" Content="CLEAR" HorizontalAlignment="Left" Margin="870,287,0,0" VerticalAlignment="Top" Background="#FFFCFCFC" FontFamily="Arial Black" Height="33" Width="97" Click="Clear_btn_Click" RenderTransformOrigin="0.099,0.483">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Update_btn" Content="UPDATE" HorizontalAlignment="Left" Margin="996,287,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Height="33" Width="102" Click="Update_btn_Click" RenderTransformOrigin="-0.125,0.592">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Delete_btn" Content="DELETE" HorizontalAlignment="Left" Margin="1148,287,0,0" VerticalAlignment="Top" Background="#FFF6F6F6" FontFamily="Arial Black" Height="33" Click="Delete_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
